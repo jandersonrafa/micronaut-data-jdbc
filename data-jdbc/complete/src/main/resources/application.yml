@@ -1,8 +1,8 @@
 micronaut:
   application:
     name: example-jdbc
-#jackson:
-#  bean-introspection-module: true
+jackson:
+  bean-introspection-module: true
 
 datasources:
   default:
@@ -20,6 +20,14 @@ jpa:
           provider: none
         hbm2ddl:
           auto: none
+#jpa:
+#  default:
+#    properties:
+#      hibernate:
+#        bytecode:
+#          provider: none
+#        hbm2ddl:
+#          auto: none
 #micronaut:
 #  application:
 #    name: example-jdbc

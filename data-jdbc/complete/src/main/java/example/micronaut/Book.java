@@ -1,9 +1,12 @@
 package example.micronaut;
 
-import io.micronaut.data.annotation.Id;
-import javax.persistence.Entity;
+//import javax.persistence.Entity;
+//import javax.persistence.Id;
 
-@Entity
+import io.micronaut.data.annotation.Id;
+import io.micronaut.data.annotation.MappedEntity;
+
+@MappedEntity
 public class Book {
 
     @Id
@@ -27,7 +30,7 @@ public class Book {
         this.title = title;
     }
 
-    @javax.persistence.Id
+    @Id
     public Long getId() {
         return id;
     }
